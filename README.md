@@ -1,7 +1,7 @@
 # nativescript-fading-scroll-view
 
-![Android][/android.png]
-![iOS][/ios.png]
+![Android](/android.png)
+![iOS](/ios.png)
 
 ## Installation
 
