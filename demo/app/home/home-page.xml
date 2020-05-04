@@ -1,0 +1,27 @@
+<Page
+    navigatingTo="onNavigatingTo"
+    xmlns="http://schemas.nativescript.org/tns.xsd"
+    xmlns:ui="nativescript-fading-scroll-view"
+    background="#222262">
+
+    <ActionBar>
+        <Label text="Home"></Label>
+    </ActionBar>
+
+    <GridLayout>
+        <!-- Add your page content here -->
+        <ui:FadingScrollView height="300" fadePercentage="0.3" scroll="onScroll">
+            <StackLayout height="500">
+                <Label fontSize="40" color="#fff" text="Lorem ipsum dolor " />
+                <Label fontSize="40" color="#fff" text="sit amet, consectetur" />
+                <Label fontSize="40" color="#fff" text="adipiscing elit, sed do" />
+                <Label fontSize="40" color="#fff" text="eiusmod tempor incididunt" />
+                <Label fontSize="40" color="#fff" text="ut labore et dolore" />
+                <Label fontSize="40" color="#fff" text="magna aliqua. Ut enim" />
+                <Label fontSize="40" color="#fff" text="ad minim veniam, quis" />
+                <Label fontSize="40" color="#fff" text="nostrud exercitation" />
+                <Label fontSize="40" color="#fff" text="ullamco laboris nisi" />
+            </StackLayout>
+        </ui:FadingScrollView>
+    </GridLayout>
+</Page>
