@@ -13,22 +13,29 @@ tns plugin add nativescript-fading-scroll-view
 
 ## Usage
 
-fadePercentage accepts value in range [0, 0.5].
 
-	```xml
-    <FadingScrollView fadePercentage="0.3" scroll="onScroll">
-			...
-		</FadingScrollView>
-    ```)
+In app.js
+```
+Vue.registerElement('FadingScrollView', () => require('nativescript-fading-scroll-view').FadingScrollView)
+```
+
+In xml
+```
+<FadingScrollView fadePercentage="0.3" scroll="onScroll">
+...
+</FadingScrollView>
+```
 
 ## API
 
 This plugin acts exactly like NativeScript core ui ScrollView, only with fading edge effects.
 If you don't want any fading edge effect, set fadePercentage="0" (or just use ScrollView, of course).
 
+Remember that if the exact height isn't specified, the fading edge effect won't work in Android.
+
 | Property | Default | Description |
 | --- | --- | --- |
-| fadePercentage | 0.3 | Strength of fade effect |
+| fadePercentage | 0.3 | Strength of fade effect (value in range [0, 0.5]) |
 
 ## License
 

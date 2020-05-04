@@ -117,7 +117,7 @@ export class FadingScrollView extends FadingScrollViewBase {
           this.nativeViewProtected.setVerticalFadingEdgeEnabled(true);
         }
         let fadeLegnth = this.fadePercentage * layout.getDisplayDensity() * <number>this.height;
-        this.nativeViewProtected.setFadingEdgeLength(fadeLegnth);
+        this.nativeViewProtected.setFadingEdgeLength(300000);
     }
 
     public _onOrientationChanged() {
